@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+      <head>
+      <title>Spartan Connect</title>
+      <meta charset="UTF-8">
+      <meta name="keywords" content="La Cañada High School, LCHS, Spartan Connect">
+      <meta name="description" content="A 21th century announcement delivery system for La Cañada High School.">
+      <link rel="stylesheet" href="index.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+      <script src=index.js></script>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <meta name="google-signin-client_id" content="277721194420-gqvi0c1l6m05lbocci003geqjjv72e79.apps.googleusercontent.com">
+    </head>
+    <body>
+        <div id=navBar><img src="/images/SpartanConnectLogo1.png" height="100" id="logo"></div>
+        <button id="signInBtn" class="signInModal" onclick=signInModalOpen()>Submit<br>Announcment</button>
+        <div id="signInModal">
+            <div id="signInModalContent" class="signInModal">
+                Sign In to Submit Announcments
+                <div class="g-signin2" data-onsuccess="onSignIn" id="googleSignInBtn"></div>
+                <button id="signInModalClose" onclick="signInModalClose()">&times;</button>
+            </div>
+        </div>
+        <img id="appOnPhone" src="Images/AppOnPhone.png" height="75%">
+    </body>
+</html>
