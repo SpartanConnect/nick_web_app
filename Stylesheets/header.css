@@ -1,0 +1,31 @@
+#nav {
+  /* Position nav bar thing across top at 100% width, relative to browser window*/
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  /* Change BG color of the nav bar div */
+  background-color: rgba(166, 25, 46, 1);
+  /* Deal with nav bar height */
+  height: 4%;
+  min-height: 30px;
+}
+#nav_links {
+  /* Position nav bar link child div */
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  top: 25%;
+}
+#nav_links a {
+  /* Change link styling */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 300;
+}
+#nav_links a:hover {
+  font-weight: 500;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
