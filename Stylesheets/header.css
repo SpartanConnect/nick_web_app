@@ -5,25 +5,52 @@
   top: 0px;
   left: 0px;
   /* Change BG color of the nav bar div */
-  background-color: rgba(166, 25, 46, 1);
+  background-color: rgba(166, 25, 46, 1); /* School red color */
   /* Deal with nav bar height */
-  height: 4%;
-  min-height: 30px;
+  height: 2em;
 }
-#nav_links {
+#nav_items {
   /* Position nav bar link child div */
-  position: relative;
-  float: right;
+  position: absolute; /* Make it absolutely positioned to parent (bar div) so that right and height work */
+  right: 0px;
+  height: 100%;
   margin-right: 10px;
-  top: 25%;
 }
-#nav_links a {
-  /* Change link styling */
+
+#nav_items ul {
+  /* Change the positioning of the ul so that its absolute to the nav_items thing, and is 0 px from the right */
+  position: relative;
+  right: 0px; */
+
+  /* Make the nav bar basically just be a unordered list */
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+  top: 0.5em;
+}
+
+#nav_items li {
+  display: inline;
+}
+
+/* #nav_items li,li * {
+  /* Change link styling
   color: rgb(255, 255, 255);
+  /* Remove auto link underlining
   text-decoration: none;
   font-weight: 300;
+
+  width: 2em;
+} */
+
+#nav_items li * {
+  display: block;
+  width: 4em;
 }
-#nav_links a:hover {
+
+#nav_items li:hover,a:hover {
+  /* Change link styling on hover */
   font-weight: 500;
 }
 body {
