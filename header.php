@@ -32,14 +32,7 @@ function headerMeta() {
 function headerHTML(){
   echo '
     <div id="nav">
-      <div id="nav_items">
-        <!-- Add the nav links -->
-        <ul>
-          <li> <a href="index.php">Home</a> </li>
-          <li> Second nav item' .
-          /* I will have to add some if\'s here in order to handle sign-in specific nav links */
-          '</ul>
-        </div>
+      <button id="signInBtn">Sign In</button>
     </div>
   ';
 }

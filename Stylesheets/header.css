@@ -1,4 +1,10 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 #nav {
+
   /* Position nav bar thing across top at 100% width, relative to browser window*/
   position: fixed;
   width: 100%;
@@ -6,53 +12,38 @@
   left: 0px;
   /* Change BG color of the nav bar div */
   background-color: rgba(166, 25, 46, 1); /* School red color */
-  /* Deal with nav bar height */
-  height: 2em;
-}
-#nav_items {
-  /* Position nav bar link child div */
-  position: absolute; /* Make it absolutely positioned to parent (bar div) so that right and height work */
-  right: 0px;
-  height: 100%;
-  margin-right: 10px;
+  /* Deal with nav bar height ***GOTTEN RID B/C OF FLEX***
+  height: 2em; */
+  /* Make children flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-#nav_items ul {
-  /* Change the positioning of the ul so that its absolute to the nav_items thing, and is 0 px from the right */
-  position: relative;
-  right: 0px; */
+.nav_item{
 
-  /* Make the nav bar basically just be a unordered list */
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-
-  top: 0.5em;
 }
 
-#nav_items li {
-  display: inline;
+#signInBtn {
+  /* Change text color and styling */
+  color: hsla(0,0%,0%,1);
+  font-variant: small-caps;
+  font-size: 22px;
+
+  /* Change the box color and styling */
+  background-color: hsla(0, 0%, 100%, 1);
+  border: 0px;
+  border-radius: 3px;
+
+  /* Make it large enough and ensure flexbox sizing works
+  height: 30px;
+  width: 75px;
+  flex-basis: auto;  */
+
+  /* Add margin to try to make flexbox size to add a bit of room on the inside */
+  margin: 10px;
 }
 
-/* #nav_items li,li * {
-  /* Change link styling
-  color: rgb(255, 255, 255);
-  /* Remove auto link underlining
-  text-decoration: none;
-  font-weight: 300;
+#signInBtn:hover {
 
-  width: 2em;
-} */
-
-#nav_items li * {
-  display: block;
-  width: 4em;
-}
-
-#nav_items li:hover,a:hover {
-  /* Change link styling on hover */
-  font-weight: 500;
-}
-body {
-  font-family: 'Roboto', sans-serif;
 }
