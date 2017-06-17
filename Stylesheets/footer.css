@@ -1,0 +1,38 @@
+#footerContainer {
+  /* Positon at bottom of screen with a bit of a spact above it.*/
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 5px;
+
+  /* Center content inside of div */  
+  text-align: center;
+}
+
+#footerContent{
+  /* Make centering work, hopefully */
+  display: inline-block;
+
+  /* Make tweaks to font */
+  text-align: center;
+  font-size: 10pt;
+  color: hsl(0, 0%, 60%);
+  line-height: 14pt;
+  /*  */
+}
+
+.footerLink {
+  /* Try to fix text shifting */
+  display: inline-block;
+  
+  /* Make tweaks to font and line spacing but now only to the links so hover works */
+  text-align: center;
+  font-size: 10pt;
+  color: hsl(0, 0%, 60%);
+  line-height: 14pt;
+}
+
+.footerLink:hover {
+  /* Darken text on hover */
+  color: hsl(0, 0%, 20%);
+}

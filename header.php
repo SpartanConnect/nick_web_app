@@ -1,7 +1,7 @@
 <?php
-function headerMeta() {
+  function headerMeta() {
   //Initialize variables for the meta and og meta.
-  $title="Spartan Connect";
+  $title='Spartan Connect';
   $description="A 21st Century Announcement App For La Ca&ntilde;ada High School";
   //echo back the meta tags and other title stuff that's the same on all pages.
   echo '
@@ -17,7 +17,7 @@ function headerMeta() {
 
     <!-- Deal with stylesheet linking -->
     <link rel="stylesheet" href="Stylesheets/header.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
 
     <!-- Deal with other og metadata -->
     <meta property="og:type" content="website">
@@ -26,15 +26,25 @@ function headerMeta() {
 
     <!-- Deal with keywords and stuff for native html (hopefully for SEO) -->
     <meta name="keywords" content="La Cañada High School, LCHS, Spartan Connect">
+
+    <!-- Add header js script -->
+    <script src="header.js"></script>
     ';
 }
 
-function headerHTML(){
-  echo '
-    <div id="nav">
-      <button id="signInBtn">Sign In</button>
-    </div>
-  ';
-}
+  function headerHTML ($isSignedIn) {
+    echo '
+      <div id="nav">'.
+        profileHTML($isSignedIn).
+        '</div>';
+      }
 
+function profileHTML ($isSignedIn) {
+  if ($isSignedIn) {
+    return '';
+  }
+  else {
+    return '<button id="signInBtn" onclick="showLogInModal()">Sign In</button>';
+  }
+}
 ?>

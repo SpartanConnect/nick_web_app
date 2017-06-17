@@ -1,6 +1,7 @@
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  text-decoration: none;
 }
 
 #nav {
@@ -10,40 +11,39 @@
   width: 100%;
   top: 0px;
   left: 0px;
-  /* Change BG color of the nav bar div */
+  /* Change BG color of the nav bar div ***NOT SURE IF NECESSARY/GOOD*** 
   background-color: rgba(166, 25, 46, 1); /* School red color */
-  /* Deal with nav bar height ***GOTTEN RID B/C OF FLEX***
-  height: 2em; */
   /* Make children flexbox */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
 
-.nav_item{
-
+  /* Make dank shadow */
+  box-shadow: 0px 0px 4px 1px hsla(0,0%,0%,0.5);
 }
 
 #signInBtn {
   /* Change text color and styling */
   color: hsla(0,0%,0%,1);
   font-variant: small-caps;
-  font-size: 22px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
 
   /* Change the box color and styling */
-  background-color: hsla(0, 0%, 100%, 1);
+  background-color: hsla(0, 0%, 95%, 1);
   border: 0px;
   border-radius: 3px;
 
-  /* Make it large enough and ensure flexbox sizing works
-  height: 30px;
-  width: 75px;
-  flex-basis: auto;  */
-
   /* Add margin to try to make flexbox size to add a bit of room on the inside */
   margin: 10px;
+
+  /* Add padding to make space around button */
+  padding: 8px 14px;
+
+  transition-duration: 0.3s;
 }
 
 #signInBtn:hover {
-
+  background-color: hsla(0, 0%, 85%, 1);
 }
