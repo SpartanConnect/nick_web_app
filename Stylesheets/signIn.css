@@ -1,3 +1,95 @@
 #signInModalWrapper {
+  /* Hidden until shown by JS */
   display:none;
+
+  /*Ensure it covers the whole browser window.*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top:0px;
+  left: 0px;
+
+  /* Add a bit of padding so that it looks decent, not sure if its necessary though. */
+  padding: 0px;
+
+  /* Change color to make background seem greyed out */
+  background-color: hsla(0, 0%, 100%, 0.4);
+
+  /* Use flex to center and stuff */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Add z-index so that I can make sure the click stuff works. */
+  z-index: 2;
+}
+
+#signInModalContent {
+  display: flex;
+
+  order: 1; 
+  /* Make the box pure white and opaque */
+  background-color: hsla(0, 0%, 100%, 1);
+  /* Add a shadow to the box */
+  box-shadow: 0px 0px 6px 0px hsla(0,0%,0%,0.4);
+  /* Add padding so that it is larger than just the box. */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* Make sure to center text inside it */
+  text-align: center;
+  /* Add a z Index */
+  z-index: 3;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#signInLabel {
+  order: 1;
+
+  align-self: flex-start;
+}
+
+#OAuthBtn {
+  order: 2;
+}
+
+#signInBtn {
+  /* Change text color and styling */
+  color: hsla(0,0%,0%,1);
+  font-variant: small-caps;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  /* Change the box color and styling */
+  background-color: hsla(0, 0%, 95%, 1);
+  border: 0px;
+  border-radius: 3px;
+
+  /* Add margin to try to make flexbox size to add a bit of room on the inside */
+  margin: 10px;
+
+  /* Add padding to make space around button */
+  padding: 8px 14px;
+
+  /* Make the box transition to and from hover */
+  transition-duration: 0.2s;
+}
+
+#signInBtn:hover {
+  /* Darken button when hovered over */
+  background-color: hsla(0, 0%, 90%, 1);
+  
+  /* Make shadow under thing when it  */
+  box-shadow: 0px 2px 6px 0px hsla(0,0%,0%,0.3);
+}
+
+#closeButton {
+  align-self: flex-end;
 }

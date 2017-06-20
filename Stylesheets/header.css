@@ -1,6 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -19,31 +19,5 @@
   justify-content: flex-end;
 
   /* Make dank shadow */
-  box-shadow: 0px 0px 4px 1px hsla(0,0%,0%,0.5);
-}
-
-#signInBtn {
-  /* Change text color and styling */
-  color: hsla(0,0%,0%,1);
-  font-variant: small-caps;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 400;
-
-  /* Change the box color and styling */
-  background-color: hsla(0, 0%, 95%, 1);
-  border: 0px;
-  border-radius: 3px;
-
-  /* Add margin to try to make flexbox size to add a bit of room on the inside */
-  margin: 10px;
-
-  /* Add padding to make space around button */
-  padding: 8px 14px;
-
-  transition-duration: 0.3s;
-}
-
-#signInBtn:hover {
-  background-color: hsla(0, 0%, 85%, 1);
+  box-shadow: 0px 0px 5px 0px hsla(0,0%,0%,0.5);
 }

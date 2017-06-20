@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audienceColumn {
+  width: 33%;
+  display: inline;
+  float: left;
+}
+
+#formContainer {
+  position: absolute;
+  top: 55px;
+  margin: 10px;
+}
+
+#nameInput {
+  width: 500px;
+}
+
+textarea {
+  resize: none;
+  width: 500px;
+}
+
+.gradeButtons {
+  /* Change text color and styling */
+  color: hsla(0,0%,0%,1);
+  font-variant: small-caps;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  /* Change the box color and styling */
+  background-color: hsla(0, 0%, 95%, 1);
+  border: 0px;
+  border-radius: 3px;
+
+  /* Add margin to try to make flexbox size to add a bit of room on the inside */
+  margin: 3px;
+
+  /* Add padding to make space around button */
+  padding: 8px 14px;
+
+  /* Make the box transition to and from hover */
+  transition-duration: 0.2s;
+}
+
+.gradeButtons:hover {
+  /* Darken button when hovered over */
+  background-color: hsla(0, 0%, 90%, 1);
+  
+  /* Make shadow under thing when it  */
+  box-shadow: 0px 2px 6px 0px hsla(0,0%,0%,0.3);
+}
+
+fieldset {
+  border: 0;
+  box-shadow: 0px 2px 6px 0px hsla(0,0%,0%,0.3);
+  padding: 10px;
+}
+
+.fieldsetLegend {
+  line-height: 30px;
+}
